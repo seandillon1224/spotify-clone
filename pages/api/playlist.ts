@@ -7,8 +7,8 @@ export default validateRoute(async (req, res, user) => {
       userId: user.id,
     },
     orderBy: {
-        name: 'asc'
-    }
+      name: "asc",
+    },
   });
   res.json(playlists);
 });

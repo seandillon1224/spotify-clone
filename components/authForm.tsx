@@ -15,7 +15,7 @@ const AuthForm: FC<{ mode: Mode }> = ({ mode }) => {
     setIsLoading(true);
     await auth(mode, { email, password });
     setIsLoading(false);
-    router.push('/');
+    router.push("/");
   };
 
   return (
@@ -26,7 +26,7 @@ const AuthForm: FC<{ mode: Mode }> = ({ mode }) => {
         height="100px"
         borderBottom="white 1px solid"
       >
-        <NextImage src="/trax.svg" height={60} width={120}/>
+        <NextImage src="/trax.svg" height={60} width={120} />
       </Flex>
       <Flex justify="center" align="center" height="calc(100vh - 100px)">
         <Box padding="50px" bg="gray.900" borderRadius="6px">
