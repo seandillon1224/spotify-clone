@@ -30,7 +30,8 @@ const musicMenu = [
 ];
 
 const Sidebar = () => {
-  const { playlists } = usePlaylist();
+  const { playlists, isError } = usePlaylist();
+  if (isError) return <div>error</div>;
   return (
     <Box
       width="100%"

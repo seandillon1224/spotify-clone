@@ -6,7 +6,7 @@ export default function middleware(req: NextRequest) {
   if (signedinPages.find((p) => p === req.nextUrl.pathname)) {
     const token = req.cookies[process.env.COOKIE_NAME];
     if (!token) {
-      return NextResponse.redirect(new URL("/signin", req.url));
+      return NextResponse.redirect("/signin");
     }
   }
 }
