@@ -5,10 +5,8 @@ export const store = createStore({
   activeSong: null,
   changeActiveSongs: action((state: any, payload) => {
     state.activeSongs = payload;
-    return state;
   }),
   changeActiveSong: action((state: any, payload) => {
     state.activeSong = payload;
-    return state;
   }),
 });
